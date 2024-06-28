@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather API</title>
 </head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/style.css">
 
 <body>
     <h1>Weather Dashboard</h1>
@@ -18,99 +18,53 @@
             <span></span>
         </div>
         <div class="today-forecast">
-            <p>___</p>
-            <p>Temprature :
-            <p></p>
-            </p>
-            <p>Wind :
-            <p></p>
-            </p>
-            <p>Humidity :
-            <p></p>
-            </p>
-            <div>
-                <img src={} alt="">
+            <div id="weather-container" class="weather-info" data-source="backend">
+                <p id="weather-icon"><img src="" alt="Weather Icon" data-type="icon"></p>
+                <hr>
+                <p id="temperature" data-unit="Celsius">Temperature: 19°C</p>
+                <p id="wind" data-unit="km/h">Wind: <span data-value="wind-speed"></span> km/h</p>
+                <p id="humidity" data-unit="%">Humidity: <span data-value="humidity-level"></span>%</p>
             </div>
         </div>
         <div class="forecast">
             
             <h3>5-Day Forecast</h3>
             <div class="day-forecast">
-                <span>
-                    <p>()</p>
-                    <img src={} alt="">
+                <div id="weather-container" class="weather-info" data-source="backend">
+                    <p id="weather-icon"><img src="" alt="Weather Icon" data-type="icon"></p>
                     <hr>
-                    <p>Temprature : 19
-                    <p></p>
-                    </p>
-                    <p>Wind :
-                    <p></p>
-                    </p>
-                    <p>Humidity :
-                    <p></p>
-                    </p>
-
-                </span>
-                <span>
-                    <p>()</p>
-                    <img src={} alt="">
+                    <p id="temperature" data-unit="Celsius">Temperature: 19°C</p>
+                    <p id="wind" data-unit="km/h">Wind: <span data-value="wind-speed"></span> km/h</p>
+                    <p id="humidity" data-unit="%">Humidity: <span data-value="humidity-level"></span>%</p>
+                </div>
+                <div id="weather-container" class="weather-info" data-source="backend">
+                    <p id="weather-icon"><img src="" alt="Weather Icon" data-type="icon"></p>
                     <hr>
-                    <p>Temprature :
-                    <p></p>
-                    </p>
-                    <p>Wind :
-                    <p></p>
-                    </p>
-                    <p>Humidity :
-                    <p></p>
-                    </p>
-
-                </span>
-                <span>
-                    <p>()</p>
-                    <img src={} alt="">
+                    <p id="temperature" data-unit="Celsius">Temperature: 19°C</p>
+                    <p id="wind" data-unit="km/h">Wind: <span data-value="wind-speed"></span> km/h</p>
+                    <p id="humidity" data-unit="%">Humidity: <span data-value="humidity-level"></span>%</p>
+                </div>
+                <div id="weather-container" class="weather-info" data-source="backend">
+                    <p id="weather-icon"><img src="" alt="Weather Icon" data-type="icon"></p>
                     <hr>
-                    <p>Temprature :
-                    <p></p>
-                    </p>
-                    <p>Wind :
-                    <p></p>
-                    </p>
-                    <p>Humidity :
-                    <p></p>
-                    </p>
-
-                </span>
-                <span>
-                    <p>()</p>
-                    <img src={} alt="">
+                    <p id="temperature" data-unit="Celsius">Temperature: 19°C</p>
+                    <p id="wind" data-unit="km/h">Wind: <span data-value="wind-speed"></span> km/h</p>
+                    <p id="humidity" data-unit="%">Humidity: <span data-value="humidity-level"></span>%</p>
+                </div>
+                <div id="weather-container" class="weather-info" data-source="backend">
+                    <p id="weather-icon"><img src="" alt="Weather Icon" data-type="icon"></p>
                     <hr>
-                    <p>Temprature :
-                    <p></p>
-                    </p>
-                    <p>Wind :
-                    <p></p>
-                    </p>
-                    <p>Humidity :
-                    <p></p>
-                    </p>
-
-                </span>
-                <span>
-                    <p>()</p>
-                    <img src={} alt="">
+                    <p id="temperature" data-unit="Celsius">Temperature: 19°C</p>
+                    <p id="wind" data-unit="km/h">Wind: <span data-value="wind-speed"></span> km/h</p>
+                    <p id="humidity" data-unit="%">Humidity: <span data-value="humidity-level"></span>%</p>
+                </div>
+                <div id="weather-container" class="weather-info" data-source="backend">
+                    <p id="weather-icon"><img src="" alt="Weather Icon" data-type="icon"></p>
                     <hr>
-                    <p>Temprature :
-                    <p></p>
-                    </p>
-                    <p>Wind :
-                    <p></p>
-                    </p>
-                    <p>Humidity :
-                    <p></p>
-                    </p>
-
-                </span>
+                    <p id="temperature" data-unit="Celsius">Temperature: 19°C</p>
+                    <p id="wind" data-unit="km/h">Wind: <span data-value="wind-speed"></span> km/h</p>
+                    <p id="humidity" data-unit="%">Humidity: <span data-value="humidity-level"></span>%</p>
+                </div>
             </div>
         </div>
     </main>
