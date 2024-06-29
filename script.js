@@ -50,4 +50,18 @@ const data_api = (lon, lat, name) => {
 }
 
 
+//this function helps to show data in my today forecast to show todays weather 
+
+const updateTodayForecast = (todayData) => {
+    const temp = todayData.main.temp;
+    const wind = todayData.wind.speed;
+    const humidity = todayData.main.humidity;
+    const iconCode = todayData.weather[0].icon;
+    const iconUrl = "http://openweathermap.org/img/wn/${iconCode}.png";
+
+    document.querySelector('#today-weather-icon img').src = iconUrl;
+    document.querySelector('[data-value="temperature"]').textContent = temp;
+    document.querySelector('[data-value="wind-speed"]').textContent = wind;
+    document.querySelector('[data-value="humidity-level"]').textContent = humidity;
+}
 
