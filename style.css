@@ -1,68 +1,52 @@
-*{
+/* Reset and base styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+    background-image: url(tom-barrett-hgGplX3PFBg-unsplash.jpg);
+}
+
+/* Heading styles */
 h1 {
     background-color: rgb(51, 131, 104);
     color: white;
     text-align: center;
-    /* padding: 10px; */
     padding: 15px;
     border-radius: 15px;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
-    /* update a/c body a change */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
-
+    animation: fadeIn 1s ease-in-out;
 }
-body{
-    /* getting code by ansh */
-    /* padding: 0px 10px 0px 10px; */
 
-    /* i update code for font change, back ground color, padding(Vikash) */
-    font-family: Arial, sans serif;
-    background-color: #f2f2f2;
-    padding: 20px;
-
-   
-} 
+/* Main content styles */
 main {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    /* justify-content */
     justify-content: center;   
-    
 }
 
+/* Sidebar styles */
 .side1 {
-    /* display: flex;
-    flex-direction: column;
     width: 100%;
-    height: auto;
     padding: 15px;
-    background-color: white;
-    border: 2px solid black;
+    background-color: #fff;
+    border: 2px solid #ddd;
     border-radius: 10px;
-} */ 
-width: 100%;;
-/* max-width: 300px; */
-padding: 15px;
-background-color: #fff;
-border: 2px solid #ddd;
-border-radius: 10px;
-box-shadow: 0  0 10px rgba(0, 0, 0, 0.1);
-height: auto;
-display: flex;
-flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1s ease-in-out;
 }
-/* search input style */
-input {
-    /* height: 18%;
-    margin-bottom: 3vh; */
 
-    /* new update by vikash */
+/* Input styles */
+input {
     height: 18%;
     padding: 0 10px;
     margin-bottom: 10px;
@@ -70,37 +54,26 @@ input {
     border-radius: 5px;
     font-size: 14px;
 }
-/* search button style */
+
+/* Search button styles */
 .search {
-    /* height: 20%;
-    background-color: rgb(51, 131, 104);
-    color: white;
-    border: none;
-    border-radius: 10px; */
-
-    /* update by vikash */
-
     height: 20%;
-    background-color: rgb(51,131,104);
+    background-color: rgb(51, 131, 104);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-   
 }
 
-.search:hover{
+.search:hover {
     background-color: rgb(41, 111, 84);
 }
 
-
-
+/* Forecast styles */
 .forecast {
     display: flex;
     flex-direction: column;
-
-    /* along with above i add some more properties */
     flex: 1;
     gap: 20px;
     background-color: #fff;
@@ -108,16 +81,11 @@ input {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    animation: fadeIn 1s ease-in-out;
 }
 
+/* Today's forecast styles */
 .today-forecast {
-    /* border: 2px solid black;
-    padding: 10px;
-    width: 100%;
-    border-radius: 15px;
-    font-weight: bolder; */
-
-    /* below update by vikash */
     width: 100%;
     padding: 15px;
     background-color: #f0f0f0;
@@ -127,32 +95,28 @@ input {
     text-align: center;
 }
 
+/* Day forecast styles */
 .day-forecast {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     justify-content: space-around;
-    /* flex-direction: row; */
 }
 
-.day-forecast span {
-    /* border: 2px solid black;
-    width: 100%;
-    padding: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 15px; */
-    width: 100%;
+.day-forecast div {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     padding: 10px;
-    background-color: #e0e0e0;
-    border: 1px solid #ccc;
     border-radius: 8px;
-    font-size: 14px;
-    font-weight: bold;
+    background-color: #e0e0e0;
     text-align: center;
+    transition: transform 0.3s ease;
 }
 
+.day-forecast div:hover {
+    transform: scale(1.05);
+}
+
+/* Media queries */
 @media (min-width: 948px) {
     .side1 {
         width: 30%;
@@ -166,13 +130,12 @@ input {
     .day-forecast span {
         width: 17vw;
     }
-    input{
+    input {
         height: 5vh;
     }
-    .search{
+    .search {
         height: 5vh;
     }
-    
 }
 
 @media (min-width: 1024px) {
@@ -188,13 +151,22 @@ input {
     .day-forecast span {
         width: 17vw;
     }
-    input{
+    input {
         height: 5vh;
     }
-    .search{
+    .search {
         height: 5vh;
     }
 }
 
-
-
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

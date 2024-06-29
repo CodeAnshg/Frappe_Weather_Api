@@ -21,11 +21,14 @@
         </div>
         <div class="today-forecast">
             <div id="today-weather-container" class="weather-info" data-source="backend">
-                <p id="today-weather-icon"><img src="http://openweathermap.org/img/wn/01d.png" alt="Weather Icon" data-type="icon"></p>
-                <hr>
+                
                 <p id="today-temperature" data-unit="Celsius">Temperature: <span data-value="temperature">25</span>°C</p>
                 <p id="today-wind" data-unit="km/h">Wind: <span data-value="wind-speed">10</span> km/h</p>
                 <p id="today-humidity" data-unit="%">Humidity: <span data-value="humidity-level">60</span>%</p>
+                <div class="img-city">
+                    <p id="city-name"> <span id="city">-</span></p>
+                    <p id="today-weather-icon"><img src="http://openweathermap.org/img/wn/01d.png" alt="Weather Icon" data-type="icon"></p>
+                </div>
             </div>
         </div>
         <div class="forecast">
