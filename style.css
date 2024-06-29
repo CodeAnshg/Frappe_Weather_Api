@@ -166,6 +166,13 @@ input {
     .day-forecast span {
         width: 17vw;
     }
+    input{
+        height: 5vh;
+    }
+    .search{
+        height: 5vh;
+    }
+    
 }
 
 @media (min-width: 1024px) {
@@ -180,6 +187,12 @@ input {
 
     .day-forecast span {
         width: 17vw;
+    }
+    input{
+        height: 5vh;
+    }
+    .search{
+        height: 5vh;
     }
 }
 
