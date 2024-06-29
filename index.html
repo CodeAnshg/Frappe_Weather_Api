@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather API</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
-<link rel="stylesheet" href="style.css">
 
 <body>
-    <h1>Weather Dashboard</h1>
+    <div class="heading">
+        <h1>Weather Dashboard</h1>
+    </div>
     <main>
         <div class="side1">
             <h4>Enter a City Name</h4>
@@ -18,104 +20,56 @@
             <span></span>
         </div>
         <div class="today-forecast">
-            <p>___</p>
-            <p>Temprature :
-            <p></p>
-            </p>
-            <p>Wind :
-            <p></p>
-            </p>
-            <p>Humidity :
-            <p></p>
-            </p>
-            <div>
-                <img src={} alt="">
+            <div id="today-weather-container" class="weather-info" data-source="backend">
+                <p id="today-weather-icon"><img src="http://openweathermap.org/img/wn/01d.png" alt="Weather Icon" data-type="icon"></p>
+                <hr>
+                <p id="today-temperature" data-unit="Celsius">Temperature: <span data-value="temperature">25</span>°C</p>
+                <p id="today-wind" data-unit="km/h">Wind: <span data-value="wind-speed">10</span> km/h</p>
+                <p id="today-humidity" data-unit="%">Humidity: <span data-value="humidity-level">60</span>%</p>
             </div>
         </div>
         <div class="forecast">
-            
             <h3>5-Day Forecast</h3>
             <div class="day-forecast">
-                <span>
-                    <p>()</p>
-                    <img src={} alt="">
-                    <hr>
-                    <p>Temprature : 19
-                    <p></p>
-                    </p>
-                    <p>Wind :
-                    <p></p>
-                    </p>
-                    <p>Humidity :
-                    <p></p>
-                    </p>
-
-                </span>
-                <span>
-                    <p>()</p>
-                    <img src={} alt="">
-                    <hr>
-                    <p>Temprature :
-                    <p></p>
-                    </p>
-                    <p>Wind :
-                    <p></p>
-                    </p>
-                    <p>Humidity :
-                    <p></p>
-                    </p>
-
-                </span>
-                <span>
-                    <p>()</p>
-                    <img src={} alt="">
-                    <hr>
-                    <p>Temprature :
-                    <p></p>
-                    </p>
-                    <p>Wind :
-                    <p></p>
-                    </p>
-                    <p>Humidity :
-                    <p></p>
-                    </p>
-
-                </span>
-                <span>
-                    <p>()</p>
-                    <img src={} alt="">
-                    <hr>
-                    <p>Temprature :
-                    <p></p>
-                    </p>
-                    <p>Wind :
-                    <p></p>
-                    </p>
-                    <p>Humidity :
-                    <p></p>
-                    </p>
-
-                </span>
-                <span>
-                    <p>()</p>
-                    <img src={} alt="">
-                    <hr>
-                    <p>Temprature :
-                    <p></p>
-                    </p>
-                    <p>Wind :
-                    <p></p>
-                    </p>
-                    <p>Humidity :
-                    <p></p>
-                    </p>
-
-                </span>
+                <div class="day">
+                    <h3>01/01/2023</h3>
+                    <img src="http://openweathermap.org/img/wn/01d.png" alt="clear sky">
+                    <p>Temperature: 25°C</p>
+                    <p>Description: clear sky</p>
+                    <p>Wind speed: 10 km/h</p>
+                </div>
+                <div class="day">
+                    <h3>02/01/2023</h3>
+                    <img src="http://openweathermap.org/img/wn/02d.png" alt="few clouds">
+                    <p>Temperature: 22°C</p>
+                    <p>Description: few clouds</p>
+                    <p>Wind speed: 12 km/h</p>
+                </div>
+                <div class="day">
+                    <h3>03/01/2023</h3>
+                    <img src="http://openweathermap.org/img/wn/03d.png" alt="scattered clouds">
+                    <p>Temperature: 24°C</p>
+                    <p>Description: scattered clouds</p>
+                    <p>Wind speed: 8 km/h</p>
+                </div>
+                <div class="day">
+                    <h3>03/01/2023</h3>
+                    <img src="http://openweathermap.org/img/wn/03d.png" alt="scattered clouds">
+                    <p>Temperature: 24°C</p>
+                    <p>Description: scattered clouds</p>
+                    <p>Wind speed: 8 km/h</p>
+                </div>
+                <div class="day">
+                    <h3>03/01/2023</h3>
+                    <img src="http://openweathermap.org/img/wn/03d.png" alt="scattered clouds">
+                    <p>Temperature: 24°C</p>
+                    <p>Description: scattered clouds</p>
+                    <p>Wind speed: 8 km/h</p>
+                </div>
             </div>
         </div>
     </main>
 
 </body>
 <script src="script.js"></script>
-
 </html>
