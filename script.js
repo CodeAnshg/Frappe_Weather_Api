@@ -104,3 +104,5 @@ const updateDOM = (dailyData) => {
     });
 }
 
+
+search.addEventListener("click",search_name_Api)
