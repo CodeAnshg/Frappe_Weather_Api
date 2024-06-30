@@ -9,6 +9,7 @@ body {
     background-color: #f2f2f2;
     padding: 20px;
     background-image: url(tom-barrett-hgGplX3PFBg-unsplash.jpg);
+    background-size: cover;
 }
 
 /* Heading styles */
@@ -93,6 +94,7 @@ input {
     border-radius: 8px;
     font-weight: bold;
     text-align: center;
+    background-color: lightblue;
 }
 
 /* Day forecast styles */
@@ -101,6 +103,7 @@ input {
     gap: 15px;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: lightblue;
 }
 
 .day-forecast div {
