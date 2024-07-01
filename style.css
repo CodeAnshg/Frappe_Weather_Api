@@ -133,10 +133,16 @@ input {
     .day-forecast span {
         width: 17vw;
     }
-    input {
+    
+    .search {
+        height: 10vh;
+    }
+}
+@media(max-width: 948px){
+    .search{
         height: 5vh;
     }
-    .search {
+    input{
         height: 5vh;
     }
 }
